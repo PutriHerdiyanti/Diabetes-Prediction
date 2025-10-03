@@ -31,7 +31,7 @@ with col1 :
     DiabetesPredigreeFunction = st.text_input ('input nilai Diabetes Predigree Function')
 
 with col2 :
-Age = st.text_input ('input nilai Age')
+    Age = st.text_input ('input nilai Age')
 
 # code untuk prediksi
 dilab_diagnosis = ''
