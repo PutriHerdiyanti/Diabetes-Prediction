@@ -7,20 +7,30 @@ diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 #judul web
 st.title('Data Mining Prediksi Diabetes')
 
-Pregnancies = st.text_input ('input nilai Pregnancies')
+col1, col2 = st.colums(2)
 
-Glucose = st.text_input ('input nilai Glucose')
+with col1 :
+    Pregnancies = st.text_input ('input nilai Pregnancies')
 
-BloodPressure = st.text_input ('input nilai Blood Pressure')
+with col2 :
+    Glucose = st.text_input ('input nilai Glucose')
 
-SkinThickness = st.text_input ('input nilai Skin Thickness')
+with col1 :
+    BloodPressure = st.text_input ('input nilai Blood Pressure')
 
-Insulin = st.text_input ('input nilai Insulin')
+with col2 :
+    SkinThickness = st.text_input ('input nilai Skin Thickness')
 
-BMI = st.text_input ('input nilai BMI')
+with col1 :
+    Insulin = st.text_input ('input nilai Insulin')
 
-DiabetesPredigreeFunction = st.text_input ('input nilai Diabetes Predigree Function')
+with col2 :
+    BMI = st.text_input ('input nilai BMI')
 
+with col1 :
+    DiabetesPredigreeFunction = st.text_input ('input nilai Diabetes Predigree Function')
+
+with col2 :
 Age = st.text_input ('input nilai Age')
 
 # code untuk prediksi
