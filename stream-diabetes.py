@@ -7,7 +7,7 @@ diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 #judul web
 st.title('Data Mining Prediksi Diabetes')
 
-col1, col2 = st.colums(2)
+col1, col2 = st.columns(2)
 
 with col1 :
     Pregnancies = st.text_input ('input nilai Pregnancies')
